@@ -1,3 +1,7 @@
 ## Why?
 
-This project merely serves as a demonstration showcasing how to address the implementation and enhance the user experience of cell slot usage in NiceGUI table components
+This project merely serves as a demonstration, showcasing how to use any NiceGUI component object in the cell slots of table components without writing Vue string templates.
+
+
+## Example
+run `python main1.py` to see the example.
