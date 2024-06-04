@@ -42,7 +42,8 @@ class EasySlot(Element, Generic[_TTeleportKey, _TBuildFnArgs], component="easySl
                 return
 
             if self._slot_build_fn:
-                tp = self._slot_build_fn(build_fn_args(self, e.args))
+                with self:
+                    tp = self._slot_build_fn(build_fn_args(self, e.args))
                 self._teleport_slots_cache[key] = tp
 
         self.on("notify", on_notify)
